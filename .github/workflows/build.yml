@@ -22,7 +22,7 @@ jobs:
           pip install pynput
 
       - name: Build with PyInstaller
-        run: pyinstaller --onefile --windowed your_script.py
+        run: pyinstaller --onefile --windowed macro.py
 
       - name: Upload Executable Artifact
         uses: actions/upload-artifact@v4
